@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <title>IT161 Test Web Page by Marcus King</title>
+        <!-- START Style Here -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Roboto+Flex:wght@300&display=swap');
+          
+            h1 {
+                display: block;
+
+                height:auto;
+                padding-left: 2em;
+                font-family: 'Jost', sans-serif;
+                font-size: 2em;
+                font-weight: 700;
+            }
+
+            img {
+                max-width:30%;
+                display: block;
+                height: auto;
+                float: left;
+                padding-left: 2em;
+                padding-right:2em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+            nav {
+                font-family: 'Roboto Flex', sans-serif;
+                font-weight:300;
+                text-align: center;
+                padding-right: 2em;
+            }
+
+            a {
+                color: #f0f0f0;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #FB542B;
+                text-decoration: none;
+            }
+
+            body {
+                display:block;
+                background-color: #343546;
+                font-family: 'Roboto Flex', sans-serif;
+                font-weight: 300;
+                color: #A0A1B2;                
+            }
+            
+            
+        </style>
+        <!-- END Styles Here -->
+    </head>
+    <body>
+        <header>
+            <h1>MARCUS KING's</br>
+            IT161 Test Page</h1>
+            <nav>
+                <a href="https://www.w3.org/" target="_blank">The W3C</a> | 
+                <a href="https://whatwg.org" target="_blank">WHATWG Community</a> | 
+                <a href="https://w3schools.com" target="_blank">W3Schools</a> | 
+                <a href="https://linkedin.com/learning/login" target="_blank">LinkedIn Learning Library</a>
+            </nav>
+        </br>
+        </header>
+            <img src="images/me.jpg" alt="Picture of Marcus" />
+            <p>This is my first test page for my IT161 class. I will be testing it in a live browser like Chrome or Firefox by clicking the two validator links in the footer of this page.</p>
+        <footer>
+            <p><small>&copy; 2022 by
+                Marcus King, All Rights Reserved ~</br>
+                <a id="html-checker" href="#">Check HTML</a> |  
+                <a id ="css-checker" href="#">Check CSS</a></small>
+            </p>
+        </footer>
+    </div>
+        <script>
+            //https://tinyurl.com/dynamic-html-checker
+            document.getElementById("html-checker").setAttributes("href","https://validator.w3.org/nu/?doc=" + location.href);
+
+            document.getElementById("css-checker").setAttributes("href","https://jigsaw.w3.org/css-validator?uri=" + location.href);
+        </script>
+    </body>
+</html>
