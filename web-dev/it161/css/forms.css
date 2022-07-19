@@ -1,0 +1,117 @@
+.dateFeedback {
+    font-style:normal;
+    font-size:100%;
+    font-weight:bold;
+    color:#FB542B;
+}
+
+table {
+  border: 0 transparent;
+  width: 100%;
+}
+
+td.topAlign {
+  vertical-align: top;
+}
+
+#formTable {
+  text-align: left;
+}
+
+#ratingTable {
+  table-layout: fixed;
+}
+
+#ratingTable tr {
+  height: 1.5em;
+}
+
+#ratingTable th td {
+  text-align: center;
+  padding: auto;
+  width: 20%;
+}
+
+input[type="text"], input[type="email"], textarea {
+  color: #F0F0F0;
+  background-color: #1E1E28;
+  border: 0.2em solid #3E4054;
+  margin: 0;
+}
+input[type="text"], input[type="email"] {
+  width:50%;
+}
+
+textarea {
+  width:100%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border: 0.2em solid #FB542B
+}
+
+div.g-recaptcha {
+  display:block;
+  width: fit-content;
+  margin: 1em auto;
+}
+
+input[type="submit"], input[type="button"] {
+  display: block;
+  color: #131319;
+  background-color:rgb(160,161,178);
+  border-radius: 5px;
+  border: 0.2em solid #F0F0F0;
+  margin: 1em auto;
+  padding: 0.5em 1.5em;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #FB542B;
+}
+
+fieldset {
+  display:block;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  border: 0.2em solid #3E4054;
+  width: 100%;
+}
+
+legend {
+  margin-top: 1em;
+  padding: 0.2em 1em;
+  border-left: 0.2em solid #3E4054;
+  border-right:  solid #3E4054;
+}
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+  #contactForm {
+    display:inline-block;
+    position: relative;
+    padding-left: 2em;
+    width: 50%;
+  }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+  #contactForm {
+    display:inline;
+    position:relative;
+    width: 60%;
+    margin-left: 1em;
+  }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+  #contactForm {
+    display:block;
+    width: 100%;
+  }
+}
